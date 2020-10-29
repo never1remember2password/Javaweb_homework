@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>hcl208</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Testconfig</servlet-name>
+    <servlet-class>hcl208.Test_Servletconfig1</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>HCl</param-value>
+    </init-param>
+     <init-param>
+      <param-name>age</param-name>
+      <param-value>20</param-value>
+    </init-param>
+    <init-param>
+      <param-name>sno</param-name>
+      <param-value>18466208</param-value>
+    </init-param>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Testconfig</servlet-name>
+    <url-pattern>/Test_Servletconfig1</url-pattern>
+  </servlet-mapping>
+
+</web-app>
